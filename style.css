@@ -33,7 +33,7 @@ body>div:first-child {
 
 body>div+div {
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 19% 81%;
     grid-template-columns: 100%;
 }
 
@@ -92,7 +92,6 @@ img {
     font-weight: 600;
     font-size: 14pt;
     grid-area: 2 / 3 / 3 / span 6;
-    margin-left: 15px;
 }
 
 #greeting h2 {
@@ -186,15 +185,24 @@ img {
 #main-section {
     display:grid;
     grid-template-rows: 8% 40% 8% 40%;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 70% 25%;
+    column-gap: 5%;
+    row-gap: .5%;
 }
 
 
 #main-content {
+    margin-left: 2%;
+    width: 90%;
     grid-area: 2 / 1 / span 3 / 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2.5%;
 }
 
 #left-label {
+    margin-left: 2%;
     grid-row: 1;
 }
 
@@ -228,7 +236,19 @@ img {
     grid-template-rows: repeat(3,32%);
 }
 
+.right-banner>p{
+    padding-left: 4%;
+    color: gray;
+}
+
+
 #main-section>div{
     width: 100%;
     height: 100%;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 1rem;
+    border-left: gold solid 15px;
 }
